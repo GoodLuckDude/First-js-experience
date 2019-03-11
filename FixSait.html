@@ -1,0 +1,120 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Машкин Сайт</title>
+		<style type="text/css">
+			* {
+				text-align: center;
+				font-family: Bookman Old Style;
+				color: rgb( 64, 64, 64);}
+
+			#page, #panel {
+				min-width: 620px;
+				width: 100%;}
+			div.pnl {
+				float: left;
+				width: 33%;
+				border-right: 3px dotted #646464;}
+			#top {
+				min-height: 80px;
+				height: 12%;
+				padding: 10px;
+				font-size: 45px;}
+			#pintop {
+				margin-top: 10px;}
+			#panel {
+				font-size: 25px;
+				overflow: auto;
+				border-bottom:  3px solid #646464;}
+
+			.buttonIsNotPressed {
+				background-color: rgba(128, 128, 128, 0);}
+			
+			button {
+				cursor: pointer;
+				width: 100%;
+				height: 7%;
+				border: 0;
+				outline: none;
+				padding: 0;
+				font-size: 25px;
+				min-height: 60px;}
+
+			.buttonIsPressed {
+				background-color: rgba(128, 128, 128, 0.15);}
+			
+			button.buttonIsPressed:hover {
+				background-color: rgba(128, 128, 128, 0.2);}
+			
+			button.buttonIsNotPressed:hover {
+				background-color: rgba(128, 128, 128, 0.09);}
+
+			#pnlRightPosition {
+				border-right: 0;}
+
+			#maincontent {
+				overflow: hidden;}
+
+			#maintime {
+				font-family: Lucida Console;
+				font-size: 150px;
+				margin-top: 15%;
+				margin-bottom: 0;}
+			
+			body {
+				margin: 0px;
+				background-image: url("images/background.jpg");
+				background-size: cover, cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;}
+
+		</style>
+	</head>
+
+
+	<body>
+		<div id="page">
+			<div id="top">
+				<p id="pintop">Ваше время</p>
+			</div>
+			<div id="panel">
+				<div class="pnl">
+					<button  id="moscowTime" class="buttonIsNotPressed">
+						Московское<br>время
+					</button>
+				</div>
+
+				<div class="pnl">
+					<button  id="worldTime" class="buttonIsNotPressed">
+						Мировое<br>время
+					</button>
+				</div>
+
+				<div id=pnlRightPosition class="pnl">
+					<button id="calcTime" class="buttonIsNotPressed">
+						Расчитать<br>время
+					</button>
+				</div>
+			</div>
+			<div id="maincontent">
+				<p id="maintime">Время</p>
+			</div>
+		</div>
+		<script
+		src="js/fixfix.js"
+		></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

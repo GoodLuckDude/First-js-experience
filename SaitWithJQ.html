@@ -1,0 +1,164 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Машкин Сайт</title>
+		<style type="text/css">
+			* {
+				text-align: center;
+				font-family: Bookman Old Style;
+				color: rgb( 64, 64, 64);}
+
+			#page, #panel {
+				min-width: 620px;
+				width: 100%;
+			}
+
+			div.pnl {
+				float: left;
+				width: 33%;
+				border-right: 3px dotted #646464;
+			}
+
+			#top {
+				min-height: 80px;
+				height: 12%;
+				padding: 10px;
+				font-size: 45px;
+			}
+
+			#pintop {
+				margin-top: 10px;
+			}
+
+			#panel {
+				font-size: 25px;
+				overflow: auto;
+				border-bottom:  3px solid #646464;
+			}
+			
+			:focus::-webkit-input-placeholder {color: transparent}
+			:focus::-moz-placeholder          {color: transparent}
+			:focus:-moz-placeholder           {color: transparent}
+			:focus:-ms-input-placeholder      {color: transparent}
+			::-webkit-input-placeholder				{color:	#B2A7A7;}
+			::-moz-placeholder								{color:	#B2A7A7;}
+			:-moz-placeholder           			{color:	#B2A7A7;}
+			:-ms-input-placeholder      			{color:	#B2A7A7;}
+			
+			
+			#calcTimePanel {
+			margin-top: 50px;
+			font-size: 25px;
+			}
+			
+			input {
+				font-size: 25px;
+				width: 1.5em;
+			}
+			
+			.buttonIsNotPressed {
+				background-color: rgba(128, 128, 128, 0);
+			}
+			
+			button {
+				cursor: pointer;
+				width: 100%;
+				height: 7%;
+				border: 0;
+				outline: none;
+				padding: 0;
+				font-size: 25px;
+				min-height: 60px;
+			}
+
+			.buttonIsPressed {
+				background-color: rgba(128, 128, 128, 0.15);
+			}
+
+			#pnlRightPosition {
+				border-right: 0;
+			}
+
+			#mainContent {
+				overflow: hidden;
+			}
+
+			#maintime {
+				font-family: Lucida Console;
+				font-size: 150px;
+				margin-top: 230px;
+				margin-bottom: 0;
+			}
+			
+			#calcTimePanel {
+				display: none;
+			}
+			
+			body {
+				margin: 0px;
+				background-image: url("images/background.jpg");
+				background-size: cover, cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+
+		</style>
+	</head>
+
+
+	<body>
+		<div id="page">
+			<div id="top">
+				<p id="pintop">Ваше время</p>
+			</div>
+			<div id="panel">
+				<div class="pnl">
+					<button  id="buttonMoscowTime" class="buttonIsNotPressed">
+						Московское<br>время
+					</button>
+				</div>
+
+				<div class="pnl">
+					<button  id="buttonWorldTime" class="buttonIsNotPressed">
+						Мировое<br>время
+					</button>
+				</div>
+
+				<div id=pnlRightPosition class="pnl">
+					<button id="buttonCalcTime" class="buttonIsNotPressed">
+						Расчитать<br>время
+					</button>
+				</div>
+			</div>
+			<div id="mainContent">
+				<div id="calcTimePanel">
+					<form id="calcTimeForm">
+						Исходное время: 
+						<input type="text" id="hoursToCalc" maxlength="2" placeholder="08"
+						/>:<input type="text" id="minToCalc" maxlength="2" placeholder="30"
+						/>
+						<p>Время в UTC: <span id="resultUTC"></span></p>
+						<p>Время в MSC: <span id="resultMSC"></span></p>
+					</form>
+				</div>
+				<p id="mainTime">Время</p>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.color-2.1.2.min.js"></script>
+		<script src="js/scriptWithJQ.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

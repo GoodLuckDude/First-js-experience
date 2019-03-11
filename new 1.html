@@ -1,0 +1,117 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Машкин Сайт</title>
+		<style type="text/css">
+			* {
+				text-align: center;}
+
+			#page, #panel {
+				min-width: 620px;
+				width: 100%;}
+			div.pnl {
+				float: left;
+				width: 33%;
+				border-right: 3px dotted #000112;}
+			#top {
+				min-height: 80px;
+				height: 12%;
+				padding: 10px;
+				font-size: 40px;}
+			#pintop {
+				margin-top: 2%;}
+			#panel {
+				font-size: 25px;
+				overflow: auto;
+				border-bottom:  2px solid #000112;}
+
+			.buttonIsNotPressed {
+				width: 100%;
+				height: 7%;
+				background-color: rgba(128, 128, 128, 0);
+				border: 0;}
+			
+			button {
+				outline: none;
+				padding: 0;
+				font-size: 25px;
+				min-height: 60px;}
+			
+			.buttonIsPressed {
+				width: 100%;
+				height: 7%;
+				background-color: rgba(128, 128, 128, 0.15);
+				border: 0;}
+
+			p.inpanal {
+				font-size: 25px;
+				margin: auto;
+				height: 56px
+				width: 80px}
+
+			#pnlRightPosition {
+				border-right: 0;}
+
+			#maincontent {
+				overflow: hidden;}
+
+			#maintime {
+				font-size: 150px;
+				margin-top: 17%;
+				margin-bottom: 0;}
+			
+			body {
+				margin: 0px;
+				background-image: url("images/background.jpg");
+				background-size: cover, cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;}
+
+		</style>
+	</head>
+
+
+	<body>
+		<div id="page">
+			<div id="top">
+				<p id="pintop">Ваше время</p>
+			</div>
+			<div id="panel">
+				<div class="pnl">
+					<button  id="moscowTime" class="buttonIsNotPressed">
+						Московское<br>время
+					</button>
+				</div>
+
+				<div class="pnl">
+					<button id="worldTime" class="buttonIsNotPressed">
+						<p class="inpanal">Мировое<br>время</p>
+					</button>
+				</div>
+
+				<div id=pnlRightPosition class="pnl">
+					<button id="calcTime" class="buttonIsNotPressed">
+						<p class="inpanal">Расчитать<br>время</p>
+					</button>
+				</div>
+			</div>
+			<div id="maincontent">
+				<p id="maintime">Время</p>
+			</div>
+		</div>
+		<script src="js/choice.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
